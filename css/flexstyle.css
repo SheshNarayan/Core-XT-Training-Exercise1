@@ -1,0 +1,82 @@
+
+.fixedHederNav{
+	position: fixed;
+	display: flex;
+	width: 98.8%;
+	height: auto;
+	padding: -10px 20px;
+  	/* background: #2d9c5aa3; */
+  	background: url(../image/headerbackground.jpg);
+  	color: #984a1c;
+   	justify-content: space-between;
+ }
+
+#navigationBar li{
+	display: inline;
+	list-style-type: none;
+	padding-right: 10px;
+	float: left;
+	background: #2d9c5aa3;
+}
+
+ul a{
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+#navigationBar a:hover{
+	background-color: blue;
+}
+.content1{
+	display: flex;
+	margin-top: 60px;
+}
+
+.content1 div, .content2 div p {
+	border: 1px #ccc solid;
+	padding: 10px;
+	font-family: sans-serif;	
+}
+
+
+.admition, .course, .about{
+	flex: 2;
+	background-color: pink;
+}
+
+.admition{
+	background-image: url(../image/admintionbackground.jpg);
+	background-size: cover; 
+	
+}
+.course{
+	background-image: url(../image/coursebackground.jpg);
+	background-size: cover; 
+}
+
+.about{
+	background-image: url(../image/aboutbackground.jpg);
+	background-size: cover; 
+}
+
+.content2{
+	display: flex;
+}
+
+.content2 .building img {
+	display: flex;
+	/* height: auto; */
+	width: 100%;
+	height: 75%;
+}
+
+.content2 .infra img {
+	display: flex;
+}
+
+#footer{
+	text-align: center;
+	color: #ff6a00d9;
+	background-color: cyan;
+}
+
