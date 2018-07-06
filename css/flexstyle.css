@@ -1,47 +1,110 @@
+body{   
+    margin:0; 
+}
+
+body a{   
+    margin:0; 
+    text-decoration: none;
+}
 
 .fixedHederNav{
+	margin:0; 
 	position: fixed;
 	display: flex;
-	width: 98.8%;
+	width: 100%;
+	/* min-height: 600px; */
 	height: auto;
 	padding: -10px 20px;
-  	/* background: #2d9c5aa3; */
-  	background: url(../image/headerbackground.jpg);
-  	color: #984a1c;
+	background: url(../image/headerbackground.jpg);
+  	color: #365a50c9;
    	justify-content: space-between;
+   	font-family: Tangerine, serif;
+	font-size: 25px;
+  	text-shadow: 4px 4px 4px #aaa;
  }
 
+.fixedHederNav h1 a {
+ 	text-decoration: none;
+}
+
+body .fixedHederNav a img{
+ 	height: 60px; width: 60px;
+ 	margin-left: 10px;
+ 	margin-top: 30px;
+ 	
+}
+
+.fixedHederNav h1 {
+ 	text-align: center;
+ }
+
+/* For Navigation Bar Home about etc */
 #navigationBar li{
 	display: inline;
 	list-style-type: none;
+	text-decoration:none;
 	padding-right: 10px;
 	float: left;
-	background: #2d9c5aa3;
+	font-family: sans-serif; 
+	margin-right: 10px;
+	margin-top: 10%;
+}
+/* For Navigation Bar Home about etc */
+#navigationBar li a{
+	font-family: sans-serif; 
+	font-size: 15px;
+	text-decoration:none;
+	color: #000000b8;
 }
 
-ul a{
+/* For Course, admition, about list item */
+.content1 ul{
+	list-style-type: none;
 	text-decoration: none;
-	font-family: sans-serif;
 }
 
-#navigationBar a:hover{
-	background-color: blue;
+.heroImage img{
+	display: block;
+	height: 100%; 
+	width: 100%;
 }
+
 .content1{
 	display: flex;
-	margin-top: 60px;
+	margin-top: 80px;
 }
 
 .content1 div, .content2 div p {
 	border: 1px #ccc solid;
 	padding: 10px;
 	font-family: sans-serif;	
+
 }
 
 
 .admition, .course, .about{
+	display: block;
 	flex: 2;
 	background-color: pink;
+	text-decoration: none;
+
+}
+
+.content3{
+	display: block;
+	/* position: relative; */
+	margin-top: -1.5%;
+	background-image: url(../image/pagecontentbackground.jpg);
+	background-size: cover;
+	text-align: left;
+	color: #33180c;
+}
+.content3  p{
+	text-indent: 3em;
+	font-family: Poiret One;
+	font-size: 22px;
+	margin-left: 2em;
+	margin-right: 2em;
 }
 
 .admition{
@@ -49,6 +112,7 @@ ul a{
 	background-size: cover; 
 	
 }
+
 .course{
 	background-image: url(../image/coursebackground.jpg);
 	background-size: cover; 
@@ -61,13 +125,13 @@ ul a{
 
 .content2{
 	display: flex;
+	/* margin-top: 0%; */
+	width: 100%;
+	height:100%;
 }
 
 .content2 .building img {
 	display: flex;
-	/* height: auto; */
-	width: 100%;
-	height: 75%;
 }
 
 .content2 .infra img {
@@ -75,8 +139,63 @@ ul a{
 }
 
 #footer{
+	display: flex;
 	text-align: center;
+	/* position: relative; */
 	color: #ff6a00d9;
 	background-color: cyan;
+	margin-bottom: 100%;
+
 }
 
+
+/* ======= Responsive ====== */
+@media screen and (max-width: 700px) {
+
+	.fixedHederNav{
+		margin:0; 
+		position: fixed;
+		display: flex;
+		width: 100%;
+		height: auto;
+		padding: -10px 20px;
+		background: url(../image/headerbackground.jpg);
+	  	color: #365a50c9;
+	   	justify-content: space-between;
+	   	font-family: Tangerine, serif;
+		font-size: 15px;
+	  	text-shadow: 4px 4px 4px #aaa;
+ 	}
+
+	#navigationBar li a{
+		font-family: sans-serif; 
+		font-size: 10px;
+		text-decoration:none;
+		color: #000000b8;
+	}
+	.content2 .building img {
+		display: flex;
+		width: 100%;
+		height: 100%;
+	}
+	.content1 div, .content2 div p {
+		border: 1px #ccc solid;
+		padding: 10px;
+		font-family: sans-serif;	
+		height: 33%;
+		width: 33%;
+	}
+
+
+	#footer{
+		position: relative;
+		/* width: 100%;
+		height: 100%; */
+		text-align: center;
+		color: #ff6a00d9;
+		background-color: cyan;
+		padding: -10px 20px;
+		margin-bottom: 100%;
+	}
+    
+}
