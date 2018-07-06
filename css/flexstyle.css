@@ -8,10 +8,11 @@ body a{
 }
 
 .fixedHederNav{
-	margin:0; 
 	position: fixed;
 	display: flex;
 	width: 100%;
+	top: 0;
+
 	/* min-height: 600px; */
 	height: auto;
 	padding: -10px 20px;
@@ -67,11 +68,14 @@ body .fixedHederNav a img{
 	display: block;
 	height: 100%; 
 	width: 100%;
+	margin-bottom: -1.5em;
 }
 
 .content1{
 	display: flex;
-	margin-top: 80px;
+/* 	margin-bottom: 20px;
+	 */	margin-top: 120px;
+	margin-bottom: 0px;
 }
 
 .content1 div, .content2 div p {
@@ -92,8 +96,7 @@ body .fixedHederNav a img{
 
 .content3{
 	display: block;
-	/* position: relative; */
-	margin-top: -1.5%;
+	/* margin-top: -3.5%; */
 	background-image: url(../image/pagecontentbackground.jpg);
 	background-size: cover;
 	text-align: left;
@@ -125,7 +128,6 @@ body .fixedHederNav a img{
 
 .content2{
 	display: flex;
-	/* margin-top: 0%; */
 	width: 100%;
 	height:100%;
 }
@@ -150,52 +152,53 @@ body .fixedHederNav a img{
 
 
 /* ======= Responsive ====== */
-@media screen and (max-width: 700px) {
-
-	.fixedHederNav{
-		margin:0; 
-		position: fixed;
-		display: flex;
-		width: 100%;
+@media screen and (max-width: 600px) {
+	
+	.content1,
+	.content1 ul,
+	.content1 div, .content2 div p ,
+	.admition, .course, .about,
+	.admition,
+	.course,
+	.about,
+	.content2{
+		flex-wrap: nowrap;
+		flex-direction: column;
+		width:100%;
 		height: auto;
-		padding: -10px 20px;
-		background: url(../image/headerbackground.jpg);
-	  	color: #365a50c9;
-	   	justify-content: space-between;
-	   	font-family: Tangerine, serif;
-		font-size: 15px;
-	  	text-shadow: 4px 4px 4px #aaa;
- 	}
-
-	#navigationBar li a{
-		font-family: sans-serif; 
-		font-size: 10px;
-		text-decoration:none;
-		color: #000000b8;
+		display: flex;	
+		background-size: cover;
 	}
-	.content2 .building img {
+
+	.fixedHederNav h1 a {
+		flex-wrap: nowrap;
+		flex-direction: column;
+		width:100%;
+	}
+
+	.content2 .building img, .content2 .infra img{
+		flex-wrap: nowrap;
+		width:100%;
+		height: auto;
+	}
+
+	.content3  p{
+		flex-wrap: nowrap;
+		flex-direction: column;
+		width:100%;
+		margin-left: 2em;
+		margin-right: 2em;
+	}
+
+	.#footer{
+		flex-wrap: wrap;
+		width:100%;
+		height: auto;
+	}
+
+	.content1{
 		display: flex;
-		width: 100%;
-		height: 100%;
+		margin-top: 230px;
+		margin-bottom: 0px;
 	}
-	.content1 div, .content2 div p {
-		border: 1px #ccc solid;
-		padding: 10px;
-		font-family: sans-serif;	
-		height: 33%;
-		width: 33%;
-	}
-
-
-	#footer{
-		position: relative;
-		/* width: 100%;
-		height: 100%; */
-		text-align: center;
-		color: #ff6a00d9;
-		background-color: cyan;
-		padding: -10px 20px;
-		margin-bottom: 100%;
-	}
-    
 }
