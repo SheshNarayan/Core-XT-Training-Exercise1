@@ -12,8 +12,6 @@ body a{
 	display: flex;
 	width: 100%;
 	top: 0;
-
-	/* min-height: 600px; */
 	height: auto;
 	padding: -10px 20px;
 	background: url(../image/headerbackground.jpg);
@@ -49,13 +47,13 @@ body .fixedHederNav a img{
 	font-family: sans-serif; 
 	margin-right: 10px;
 	margin-top: 10%;
-}
+	}
 /* For Navigation Bar Home about etc */
 #navigationBar li a{
 	font-family: sans-serif; 
 	font-size: 15px;
 	text-decoration:none;
-	color: #000000b8;
+	 color: #000000b8; 
 }
 
 /* For Course, admition, about list item */
@@ -73,8 +71,7 @@ body .fixedHederNav a img{
 
 .content1{
 	display: flex;
-/* 	margin-bottom: 20px;
-	 */	margin-top: 120px;
+	margin-top: 120px;
 	margin-bottom: 0px;
 }
 
@@ -152,15 +149,21 @@ body .fixedHederNav a img{
 
 
 /* ======= Responsive ====== */
-@media screen and (max-width: 600px) {
-	
+@media screen and (max-width: 600px){
+	body{   
+    	margin:0; 
+   	}
+	body a{   
+	    margin:0; 
+	    text-decoration: none;
+	}
+	/* .admition, .course, .about,
+	.admition,
+	.course,
+	.about, */
 	.content1,
 	.content1 ul,
 	.content1 div, .content2 div p ,
-	.admition, .course, .about,
-	.admition,
-	.course,
-	.about,
 	.content2{
 		flex-wrap: nowrap;
 		flex-direction: column;
@@ -177,9 +180,10 @@ body .fixedHederNav a img{
 	}
 
 	.content2 .building img, .content2 .infra img{
-		flex-wrap: nowrap;
+		flex-wrap: wrap;
 		width:100%;
 		height: auto;
+		margin-top: 50px;
 	}
 
 	.content3  p{
@@ -191,14 +195,52 @@ body .fixedHederNav a img{
 	}
 
 	.#footer{
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		width:100%;
 		height: auto;
 	}
 
 	.content1{
+		margin-top: 125px;
+	}
+
+	h2 {
+	    margin-left: 50px;
+	    margin-top: 60px;
+	    margin-bottom: 0px;
+	}
+	ul {
+		margin-left: 50Px;
+	}
+	.admition, .course, .about{
+		display: block;
+		margin-top: 45px;
+		margin-bottom: -50px;
+
+	/* 	padding-right: 35px; */
+	}
+	
+	.heroImage img{
+		display: block;
+		height: auto; 
+		width: 100%;
+		margin-top: 50px;
+		padding-left: 15px;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 601px){
+	.content1{
 		display: flex;
-		margin-top: 230px;
-		margin-bottom: 0px;
+	    margin-top: 160px;
+	    margin-bottom: 0px;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 767px){
+	.content1 {
+	    display: flex;
+	    margin-top: 117px;
+	    margin-bottom: 0px;
 	}
 }
