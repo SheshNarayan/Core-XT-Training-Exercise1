@@ -157,10 +157,7 @@ body .fixedHederNav a img{
 	    margin:0; 
 	    text-decoration: none;
 	}
-	/* .admition, .course, .about,
-	.admition,
-	.course,
-	.about, */
+
 	.content1,
 	.content1 ul,
 	.content1 div, .content2 div p ,
@@ -216,8 +213,6 @@ body .fixedHederNav a img{
 		display: block;
 		margin-top: 45px;
 		margin-bottom: -50px;
-
-	/* 	padding-right: 35px; */
 	}
 	
 	.heroImage img{
